@@ -1,0 +1,38 @@
+<script src="any_error.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    AnyError.config.send_mime_types = true;
+    AnyError.config.send_plugins = true;
+    AnyError.config.send_external_scripts = true;
+    AnyError.config.send_screen_info = true;
+    AnyError.config.project = "<<projectkeyhere>>";
+
+    AnyError.hook_up_window_error();
+
+    function atest() {
+        try {
+            a = a.dkddd;
+        }
+        catch(e) {
+            AnyError.exception_notify(e);
+        }
+    }
+
+    function bob() {
+        atest();
+    }
+    bob();
+
+    try
+    {
+    b.bbb
+    }
+    catch(ee)
+    {
+        AnyError.exception_notify(ee);
+
+    }
+</script>
+
+
+Hi How are you
